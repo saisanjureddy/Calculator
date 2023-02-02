@@ -14,10 +14,8 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
 
     //MARK: - The view controller controls the view
-    
     //MARK: - IBOulet - reference a UI Element
     @IBOutlet var outputLbl: UILabel! //screen
-    
     
     //Properties
     var numberOnScreen: Double = 0 //current number on screen in label
@@ -29,9 +27,7 @@ class ViewController: UIViewController {
     var operation = 0 //this will know what operation is being pressed
     
     //A number will represent each operation
-    
     var btnSound: AVAudioPlayer! //To play a sound when button is clicked
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +36,6 @@ class ViewController: UIViewController {
     
     //MARK: - IBAction - perform an action on a button
 
-    
     @IBAction func numberBtn(_ sender: UIButton) {
         //When a number button is pressed
         playSound()
@@ -106,9 +101,7 @@ class ViewController: UIViewController {
                 //multiplying
                 outputLbl.text = String(previousNumber * numberOnScreen)
             } else if operation == 16 {
-                //outputLbl.text = String(previousNumber % numberOnScreen)
-                //Pending formula
-                outputLbl.text = String("999")
+                outputLbl.text = String(calculatePercentage(value: previousNumber, percentageVal: numberOnScreen))
             }
             
         } else if sender.tag == 10 {
@@ -126,12 +119,7 @@ class ViewController: UIViewController {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -140,6 +128,11 @@ class ViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    public func calculatePercentage(value:Double,percentageVal:Double)->Double{
+        let val = value * percentageVal
+        return val / 100.0
     }
 
 }
