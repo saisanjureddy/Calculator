@@ -19,8 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars-landscape-background-with-flat-design_23-2147979445" translatesAutoresizingMaskIntoConstraints="NO" id="Uir-k6-RcH">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="lc5-wH-4kW">
-                                <rect key="frame" x="23" y="78" width="346" height="123"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="lc5-wH-4kW">
+                                <rect key="frame" x="23" y="78" width="347" height="123"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-2x-d7d">
                                 <rect key="frame" x="46" y="102" width="301" height="80"/>
@@ -32,10 +32,10 @@
                                 <rect key="frame" x="23" y="217" width="347" height="601"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-jm-bTA">
-                                        <rect key="frame" x="0.0" y="0.0" width="347" height="112.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="347" height="80.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDR-Po-MdT">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="112.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="1"/>
                                                 <connections>
@@ -43,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrS-4H-tVP">
-                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="112.66666666666667"/>
+                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="2"/>
                                                 <connections>
@@ -51,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-QQ-PUt">
-                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="112.66666666666667"/>
+                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="3"/>
                                                 <connections>
@@ -59,7 +59,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrG-7m-Ym6">
-                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="112.66666666666667"/>
+                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="+"/>
                                                 <connections>
@@ -69,10 +69,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kc3-gH-KXc">
-                                        <rect key="frame" x="0.0" y="162.66666666666669" width="347" height="113"/>
+                                        <rect key="frame" x="0.0" y="130.33333333333331" width="347" height="80"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY2-6B-ZAd">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="113"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="4"/>
                                                 <connections>
@@ -80,7 +80,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO3-Fs-N9q">
-                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="113"/>
+                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="5"/>
                                                 <connections>
@@ -88,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnw-RD-dsf">
-                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="113"/>
+                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="6"/>
                                                 <connections>
@@ -96,7 +96,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eq-nM-Ycu">
-                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="113"/>
+                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="_"/>
                                                 <connections>
@@ -106,10 +106,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bBW-j3-gQB">
-                                        <rect key="frame" x="0.0" y="325.66666666666663" width="347" height="112.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="260.33333333333331" width="347" height="80.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-Yu-j1f">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="112.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="7"/>
                                                 <connections>
@@ -117,7 +117,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I5-vu-qcp">
-                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="112.66666666666667"/>
+                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="8"/>
                                                 <connections>
@@ -125,7 +125,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tN-Gc-5A5">
-                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="112.66666666666667"/>
+                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="9"/>
                                                 <connections>
@@ -133,7 +133,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfB-rt-Pq9">
-                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="112.66666666666667"/>
+                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="80.333333333333329"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="Divide"/>
                                                 <connections>
@@ -143,10 +143,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="73D-kH-0uS">
-                                        <rect key="frame" x="0.0" y="488.33333333333343" width="347" height="112.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="390.66666666666663" width="347" height="80"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiu-vj-A7q">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="112.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="C"/>
                                                 <connections>
@@ -154,23 +154,23 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytq-J5-TM6">
-                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="112.66666666666667"/>
+                                                <rect key="frame" x="89.333333333333343" y="0.0" width="79.333333333333343" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="0"/>
                                                 <connections>
                                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sp-ip-H4m"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-YM-1Me">
-                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="112.66666666666667"/>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-YM-1Me">
+                                                <rect key="frame" x="178.66666666666666" y="0.0" width="78.999999999999972" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="="/>
+                                                <state key="normal" image="Percentage-1"/>
                                                 <connections>
                                                     <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJS-kR-q9d"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdM-Eg-ZeW">
-                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="112.66666666666667"/>
+                                                <rect key="frame" x="267.66666666666669" y="0.0" width="79.333333333333314" height="80"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="Multiply"/>
                                                 <connections>
@@ -179,6 +179,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-Za-gds">
+                                        <rect key="frame" x="0.0" y="520.66666666666663" width="347" height="80.333333333333371"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="="/>
+                                        <connections>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEe-Ef-RUx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -228,6 +236,7 @@
         <image name="C" width="300" height="300"/>
         <image name="Divide" width="300" height="300"/>
         <image name="Multiply" width="300" height="300"/>
+        <image name="Percentage-1" width="225" height="225"/>
         <image name="_" width="300" height="300"/>
         <image name="mars-landscape-background-with-flat-design_23-2147979445" width="626" height="626"/>
         <image name="screen" width="829" height="284"/>
