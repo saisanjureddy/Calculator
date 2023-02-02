@@ -7,13 +7,17 @@
 
 import UIKit
 import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
-    
+//    var audioPlayer = AVAudioPlayer()
+    var player: AVAudioPlayer?
+
     //MARK: - The view controller controls the view
     
     //MARK: - IBOulet - reference a UI Element
     @IBOutlet var outputLbl: UILabel! //screen
+    
     
     //Properties
     var numberOnScreen: Double = 0 //current number on screen in label
@@ -39,7 +43,7 @@ class ViewController: UIViewController {
     
     @IBAction func numberBtn(_ sender: UIButton) {
         //When a number button is pressed
-        
+        playSound()
         if performingMath == true {
             //If we have pressed an operator
             outputLbl.text = "" //clear the label on calculator
@@ -55,13 +59,14 @@ class ViewController: UIViewController {
     
     @IBAction func operators(_ sender: UIButton) {
         //When an operator is pressed
-        
+        playSound()
         //10 = C
         //11 = EQUALS
         //12 = ADD
         //13 = SUBSTRACT
         //14 = DIV
         //15 = MUL
+        //16 = Percent
         
         if(outputLbl.text != "" && sender.tag != 11 && sender.tag != 10) {
             //If we have not pressed equals or clear, and the output label is not empty
@@ -100,6 +105,10 @@ class ViewController: UIViewController {
             } else if operation == 15 {
                 //multiplying
                 outputLbl.text = String(previousNumber * numberOnScreen)
+            } else if operation == 16 {
+                //outputLbl.text = String(previousNumber % numberOnScreen)
+                //Pending formula
+                outputLbl.text = String("999")
             }
             
         } else if sender.tag == 10 {
@@ -109,6 +118,28 @@ class ViewController: UIViewController {
             numberOnScreen = 0 //reset
         }
         
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "mixkit-single-classic-click-1116", withExtension: "wav") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 
 }
